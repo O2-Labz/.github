@@ -24,7 +24,6 @@ Built to 3GPP Release 18 and validated against SaskTel's multi-vendor 5G cloud, 
 | Repo | Purpose |
 |---|---|
 | [`odin-docs`](https://github.com/O2-Labz/odin-docs) | Project management (PMBOK artifacts), design analysis, solution architecture |
-| `priv-stuff` | Private research, 3GPP spec artifacts, SaskTel engagement docs |
 | `odin-nwdaf` | *(planned)* The NWDAF service itself (Rust) |
 | `odin-loop` | *(planned)* PCF stand-in consumer + chaos harness |
 | `odin-api` | *(planned)* Codegen + shared SBI types from 3GPP OpenAPI |
