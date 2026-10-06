@@ -10,7 +10,7 @@
 
 ## Featured Project: Project Odin 🦅
 
-**Project Odin** is an open-source implementation of the 3GPP **Network Data Analytics Function (NWDAF)** — the AI brain of the 5G core. Odin ingests control-plane telemetry from network functions, runs statistical and ML analytics, and notifies consumer network functions (PCF/OAM/SMF/AMF) to close the automation loop: predict problems, mitigate automatically, zero human intervention.
+**Project Odin** is an open-source implementation of the 3GPP **Network Data Analytics Function (NWDAF)** — the AI brain of the 5G core. Odin ingests control-plane telemetry from network functions and runs statistical and ML analytics. It notifies consumer network functions (PCF/OAM/SMF/AMF), which close the automation loop: predict problems, mitigate, and act with no human intervention.
 
 Built to 3GPP Release 18 and validated against SaskTel's multi-vendor 5G cloud, Odin proves that a third-party, vendor-neutral NWDAF can plug into a commercial core — escaping vendor lock-in and returning telemetry ownership to the operator.
 
