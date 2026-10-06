@@ -3,8 +3,8 @@
 **O2-Labz** is a software engineering group based out of Regina, SK for 2026-2027 Software Systems Engineering Capstone; in partnership with **SaskTel**, delivering open-source, vendor-neutral network automation for 5G.
 
 **Members:**
-Zana Osman
-Hashir Owais
+<br>Zana Osman
+<br>Hashir Owais
 
 ---
 
