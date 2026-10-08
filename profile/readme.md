@@ -1,37 +1,39 @@
-# Welcome to O2-Labz ⚡
+# Welcome to O2-Labz
 
-**O2-Labz** is a software engineering group based out of Regina, SK for 2026-2027 Software Systems Engineering Capstone; in partnership with **SaskTel**, delivering open-source, vendor-neutral network automation for 5G.
+**O2-Labz** is a software engineering group based in Regina, SK, working on our 2026–2027 Software Systems Engineering capstone **in partnership with SaskTel** — building an AI brain for their 5G network core.
 
-**Members:**
-<br>Zana Osman
-<br>Hashir Owais
+**The team:**
+- **Hashir Owais** — Project Manager / Technical Lead
+- **Zana Osman** — Full Stack Software Engineer
 
 ---
 
-## Featured Project: Project Odin 🦅
+## Featured Project: Project Odin
 
-**Project Odin** is an open-source implementation of the 3GPP **Network Data Analytics Function (NWDAF)** — the AI brain of the 5G core. Odin ingests control-plane telemetry from network functions and runs statistical and ML analytics. It notifies consumer network functions (PCF/OAM/SMF/AMF), which close the automation loop: predict problems, mitigate, and act with no human intervention.
+**Project Odin** is the AI brain of a 5G core network. Think of it like a fitness tracker for the network: it **watches**, it **learns** what healthy looks like, and it **predicts** problems before customers ever feel them — then tells the network's own systems to fix it, with no human in the loop.
 
-Built to 3GPP Release 18 and validated against SaskTel's multi-vendor 5G cloud, Odin proves that a third-party, vendor-neutral NWDAF can plug into a commercial core — escaping vendor lock-in and returning telemetry ownership to the operator.
+Odin is being built as a scoped MVP for SaskTel: we ship one complete closed loop (sense → predict → notify → act) with measured evidence, so SaskTel can evaluate it and decide whether to keep building their own network intelligence or buy a vendor solution. Whatever they pick, the network data and the models stay theirs — no lock-in, ever.
 
 ```text
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│ Producer NFs │ ──► │  ODIN (NWDAF)│ ──► │ Consumer NFs │
-│ AMF/SMF/PCF  │     │ ingest → ML  │     │ PCF/OAM/SMF  │
-│ OAM/UDM      │     │ → analytics  │     │ → enforce    │
+│   Network    │ ──► │     ODIN     │ ──► │   Network    │
+│  (senses)    │     │  (the brain) │     │  (the hands) │
+│ phones,      │     │ watch → learn│     │ policy,      │
+│ sessions,    │     │ → predict    │     │ quarantine,  │
+│ load metrics │     │              │     │ scale out    │
 └──────────────┘     └──────────────┘     └──────────────┘
-   telemetry in        the brain           closed-loop action
+   signals in         no human needed      action out
 ```
 
 ## Repositories
 
 | Repo | Purpose |
 |---|---|
-| [`odin-docs`](https://github.com/O2-Labz/odin-docs) | Project management (PMBOK artifacts), design analysis, solution architecture |
-| `odin-nwdaf` | *(planned)* The NWDAF service itself (Rust) |
-| `odin-loop` | *(planned)* PCF stand-in consumer + chaos harness |
-| `odin-api` | *(planned)* Codegen + shared SBI types from 3GPP OpenAPI |
-| `odin-deploy` | *(planned)* Operator-facing k8s deployment manifests |
+| [`odin-docs`](https://github.com/O2-Labz/odin-docs) | Project management, design analysis, solution architecture |
+| `odin-brain` | *(planned)* The Odin service itself — ingestion, models, predictions (Rust) |
+| `odin-loop` | *(planned)* The closed-loop consumer stand-in + failure-injection harness |
+| `odin-api` | *(planned)* Codegen + shared API types from the 3GPP OpenAPI definitions |
+| `odin-deploy` | *(planned)* Kubernetes deployment manifests |
 
 ## Kanban
 
