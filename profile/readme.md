@@ -50,7 +50,7 @@ SaskTel approved the design for version 1 on 10 November 2026. Nothing is built 
 | Repo | What it holds | Status |
 |---|---|---|
 | [`odin-docs`](https://github.com/O2-Labz/odin-docs) | Project management artifacts, solution architecture, SaskTel review material, usability work | Active |
-| `odin-nwdaf` | The Go code: the `nwdaf`, `operator`, and `reader` binaries, plus the Kubernetes manifests | Next, not created yet |
+| [`odin-nwdaf`](https://github.com/O2-Labz/odin-nwdaf) | The Go code: the `nwdaf`, `operator`, and `reader` binaries, plus the Kubernetes manifests | Started, scaffold only |
 | [`odin-frontend`](https://github.com/O2-Labz/odin-frontend) | Odin Console, the web view that shows an operator what Odin reports | Started, early |
 
 Odin is one code repository on purpose. The operator and the reader share data types with the analytics function, so all three ship together.
